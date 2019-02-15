@@ -1,8 +1,8 @@
 {
   "title": "Conan Basics",
   "description": "Learn the basics of the C/C++ package manager Conan",
-  "difficulty": "Beginner"
-  "time": "10 minutes"
+  "difficulty": "Beginner",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {
@@ -18,7 +18,7 @@
     "finish": {
       "text": "finish.md",
       "credits": "http://conan.io"
-    }
+    },
     "assets": {
         "client": [
           {
