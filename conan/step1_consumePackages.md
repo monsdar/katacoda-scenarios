@@ -2,7 +2,7 @@
 
 Let's build our basic C++ component the old way...
 
-* `cd build`{{execute}}
-* `cmake ../`{{execute}}
+* `cd helloworld/build`{{execute}}
+* `cmake ../source`{{execute}}
 * `cmake --build .`{{execute}}
 * `./hello`{{execute}}

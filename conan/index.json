@@ -27,8 +27,8 @@
     }
   },
   "files": [
-    "~/helloworld/source/main.cpp",
-    "~/helloworld/source/CMakeLists.txt"
+    "main.cpp",
+    "CMakeLists.txt"
   ],
   "environment": {
     "uilayout": "editor-terminal",
