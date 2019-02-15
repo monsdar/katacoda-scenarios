@@ -1,8 +1,8 @@
 ## Task
 
-This is an _example_ of creating a scenario and running a **command**
+Let's build our basic C++ component the old way...
 
-* `mkdir build`{{execute}}
+* `cd build`{{execute}}
 * `cmake ../`{{execute}}
 * `cmake --build .`{{execute}}
 * `./hello`{{execute}}
