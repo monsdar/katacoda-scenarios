@@ -22,16 +22,12 @@
     },
     "assets": {
       "host01": [
-        {"file": "main.cpp", "target": "/root/"},
-        {"file": "CMakeLists.txt", "target": "/root/"},
+        {"file": "main.cpp", "target": "~/helloworld/source/"},
+        {"file": "CMakeLists.txt", "target": "~/helloworld/source/"},
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
-  "files": [
-    "main.cpp",
-    "CMakeLists.txt"
-  ],
   "environment": {
     "uilayout": "editor-terminal",
     "uimessage1": "Welcome to the Conan tutorial!"
