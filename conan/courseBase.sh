@@ -1,12 +1,11 @@
 #!/bin/bash
 
-mkdir ~/helloworld
-mkdir ~/helloworld/build
-mkdir ~/helloworld/source
-cd ~/helloworld
+mkdir helloworld
+mkdir helloworld/build
+mkdir helloworld/source
 
 yes | pip install conan
 apt-get update
 apt-get -y install cmake
 
-echo "done" >> /root/katacoda-background-finished
+echo "done" >> /katacoda-background-finished

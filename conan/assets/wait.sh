@@ -10,7 +10,7 @@ show_progress()
   echo "Started"
   echo -n "Configuring"
   while true; do 
-    sudo grep -i "done" /root/katacoda-background-finished &> /dev/null
+    sudo grep -i "done" /katacoda-background-finished &> /dev/null
     if [[ "$?" -ne 0 ]]; then     
       temp="${spinstr#?}"
       printf " [%c]  " "${spinstr}"

@@ -6,8 +6,8 @@
   "details": {
     "steps": [
       {
-        "title": "Conan install",
-        "text": "step1_consumePackages.md"
+        "title": "Hello World",
+        "text": "step1_helloWorld.md"
       }
     ],
     "intro": {
@@ -34,7 +34,7 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uimessage1": "Welcome to the Conan tutorial!"
+    "uimessage1": "Welcome to the Conan tutorial! Please wait while everything gets set up..."
   },
   "backend": {
     "imageid": "ubuntu"
