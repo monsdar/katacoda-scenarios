@@ -26,11 +26,7 @@
         {"file": "CMakeLists.txt", "target": "helloworld/source/"},
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
-    },
-    "files": [
-        "helloworld/source/main.cpp",
-        "helloworld/source/CMakeLists.txt"
-    ]
+    }
   },
   "environment": {
     "uilayout": "editor-terminal",
