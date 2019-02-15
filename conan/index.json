@@ -22,15 +22,15 @@
     },
     "assets": {
       "host01": [
-        {"file": "main.cpp", "target": "~/helloworld/source/"},
-        {"file": "CMakeLists.txt", "target": "~/helloworld/source/"},
+        {"file": "main.cpp", "target": "/root/"},
+        {"file": "CMakeLists.txt", "target": "/root/"},
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
   "files": [
-    "~/helloworld/source/main.cpp",
-    "~/helloworld/source/CMakeLists.txt"
+    "main.cpp",
+    "CMakeLists.txt"
   ],
   "environment": {
     "uilayout": "editor-terminal",
