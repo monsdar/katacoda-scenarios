@@ -22,8 +22,8 @@
     },
     "assets": {
       "host01": [
-        {"file": "main.cpp", "target": "~/helloworld/source/"},
-        {"file": "CMakeLists.txt", "target": "~/helloworld/source/"},
+        {"file": "main.cpp", "target": "helloworld/source/"},
+        {"file": "CMakeLists.txt", "target": "helloworld/source/"},
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
