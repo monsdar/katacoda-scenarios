@@ -1,12 +1,12 @@
 Now that we've seen what to work with lets start diving into coding.
 
 First we need to install Conan. As it is Python-based the easiest way is to use pip for that:
-* yes | pip install conan{{execute}}
+* `yes | pip install conan`{{execute}}
 
 After the installation finished take a look at our second example:
-* The `main.cpp` did not change much. It now uses POCO though: helloworld2/source/hello2.cpp{{open}}
-* In the `CMakeLists.txt` you can already see that there's something new going on: Our app uses POCO, but it's nowhere to be found as a dependency. This is because Conan is handling this for us: helloworld2/source/CMakeLists.txt{{open}}
-* And here's where everything comes together: The `conanfile.txt` defines which dependencies to use: helloworld2/source/conanfile.txt{{open}}
+* The `main.cpp` did not change much. It now uses POCO though: `helloworld2/source/hello2.cpp`{{open}}
+* In the `CMakeLists.txt` you can already see that there's something new going on: Our app uses POCO, but it's nowhere to be found as a dependency. This is because Conan is handling this for us: `helloworld2/source/CMakeLists.txt`{{open}}
+* And here's where everything comes together: The `conanfile.txt` defines which dependencies to use: `helloworld2/source/conanfile.txt`{{open}}
 
 We can build the whole project with the following commands:
 * `cd ~/helloworld2/`{{execute}}
