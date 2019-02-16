@@ -15,4 +15,4 @@ We can build the whole project with the following commands:
 * `cmake --build .`{{execute}}
 * `./hello2`{{execute}}
 
-Do you remember what it usually take to pull in a dependency like POCO into your project? Note that Conan also handles indirect dependencies, you don't need to worry about OpenSSL or zlib for example (POCO depends on it). Feel free to play around with the `conanfile.txt`, change the version or add a completely different dependency from [conan-center](https://bintray.com/conan/conan-center).
+Do you remember what it usually takes to pull in a dependency like POCO into your project? Note that Conan also handles indirect dependencies, you don't need to worry about OpenSSL or zlib for example (POCO depends on it them). Feel free to play around with the `conanfile.txt`, change the version or add a completely different dependency from [conan-center](https://bintray.com/conan/conan-center).
