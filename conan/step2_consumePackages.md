@@ -9,9 +9,9 @@ After the installation finished take a look at our second example:
 * And here's where everything comes together: The `conanfile.txt` defines which dependencies to use: helloworld2/source/conanfile.txt{{open}}
 
 We can build the whole project with the following commands:
-* `cd ~/helloworld2/build/`{{execute}}
-* `conan install ../source`{{execute}}
-* `cmake ../source/`{{execute}}
+* `cd ~/helloworld2/`{{execute}}
+* `conan install source`{{execute}}
+* `cmake source`{{execute}}
 * `cmake --build .`{{execute}}
 * `./hello2`{{execute}}
 

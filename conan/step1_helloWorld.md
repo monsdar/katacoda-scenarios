@@ -10,8 +10,8 @@ Within the directory `helloworld/source` is a very simple `hello.cpp` that gets 
 * `helloworld/source/CMakeLists.txt`{{open}}
 
 We want to build the application within the `helloworld/build` directory by using CMake. Building the app is straight-forward:
-* `cd ~/helloworld/build`{{execute}}
-* `cmake ../source`{{execute}}
+* `cd ~/helloworld`{{execute}}
+* `cmake source`{{execute}}
 * `cmake --build .`{{execute}}
 * `./hello`{{execute}}
 
