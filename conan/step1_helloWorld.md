@@ -5,12 +5,12 @@ On the right side you see an editor window and a terminal. This is a normal Ubun
 All links to files are clickable, so are the terminal commands below.
 
 To get started we've set up a very simple application for you.
-Within the directory `helloworld/source` is a very simple `main.cpp` that gets built with a standard `CMakeLists.txt`. To open those files click onto the following links:
-* `helloworld/source/main.cpp`{{open}}
+Within the directory `helloworld/source` is a very simple `hello.cpp` that gets built with a standard `CMakeLists.txt`. To open those files click onto the following links:
+* `helloworld/source/hello.cpp`{{open}}
 * `helloworld/source/CMakeLists.txt`{{open}}
 
 We want to build the application within the `helloworld/build` directory by using CMake. Building the app is straight-forward:
-* `cd helloworld/build`{{execute}}
+* `cd ~/helloworld/build`{{execute}}
 * `cmake ../source`{{execute}}
 * `cmake --build .`{{execute}}
 * `./hello`{{execute}}

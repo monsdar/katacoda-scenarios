@@ -8,6 +8,10 @@
       {
         "title": "Hello World",
         "text": "step1_helloWorld.md"
+      },
+      {
+        "title": "Consuming Packages",
+        "text": "step2_consumePackages.md"
       }
     ],
     "intro": {
@@ -22,8 +26,11 @@
     },
     "assets": {
       "host01": [
-        {"file": "main.cpp", "target": "helloworld/source/"},
-        {"file": "CMakeLists.txt", "target": "helloworld/source/"},
+        {"file": "hello.cpp", "target": "helloworld/source/"},
+        {"file": "CMakeLists_hello.txt", "target": "helloworld/source/CMakeLists.txt"},
+        {"file": "hello2.cpp", "target": "helloworld2/source/"},
+        {"file": "CMakeLists_hello2.txt", "target": "helloworld2/source/CMakeLists.txt"},
+        {"file": "conanfile.py", "target": "helloworld2/source/"},
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
