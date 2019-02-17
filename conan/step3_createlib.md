@@ -1,13 +1,13 @@
-Consuming packages with your application is easy, but let's be honest: Most of what we're doing happens within libraries. So let's dive in and see how Conan is helping us with that.
+Consuming packages with your application is easy, but let's be honest: Most of what we're doing happens within libraries. So let's check out how Conan is helping us with that.
 
-One major thing gets introduced now: Instead of a `conanfile.txt` we'll be working with a `conanfile.py`. This is the main way you'll be working with Conan, for libraries as well as for applications.
+One major thing gets introduced now: Instead of a `conanfile.txt` we'll be working with a `conanfile.py`. This is the main way you'll be working with when using Conan, for libraries as well as for applications.
 
 Using a `conanfile.py` unleashes the full power of Conan. This file contains not only the dependencies and their options, but also allows you to 
 * ...acquire additional source files
 * ...automate your build
 * ...perform tests
 * ...package everything up for others to reuse
-and that's just the tip of the iceberg here!
+* and that's just the tip of the iceberg here!
 
 Let's have a look how our lib looks like:
 * The header contains a simple class. The only method returns our previous _Hello World_: `hellolib/source/hello.h`{{open}}
@@ -21,7 +21,7 @@ Let's have a look how our lib looks like:
 Building the lib is straight-forward. Note how we can use conan to build:
 * `mkdir -p ~/hellolib/build && cd ~/hellolib/build`{{execute}}
 * `conan install ../source`{{execute}}
-* `conan build .`{{execute}}
+* `conan build ../source`{{execute}}
 
 Here's the kicker: With `conan create` we can package our lib and push it into our local Conan cache:
 * `conan create . katacoda/testing`{{execute}}

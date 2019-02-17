@@ -12,6 +12,9 @@ class HelloConan(ConanFile):
     generators = "cmake"
     exports_sources="hello.h", "hello.cpp", "CMakeLists.txt"
     
+    def requirements(self):
+        self.requires("Poco/1.9.0@pocoproject/stable"
+    
     def build(self):
         cmake = CMake(self)
         cmake.configure(source_folder=".")

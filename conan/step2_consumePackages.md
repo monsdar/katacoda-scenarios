@@ -1,8 +1,16 @@
-Now that we've seen what to work with lets start diving into coding.
+Now that we've seen what to work with lets start with Conan.
 
+# Install Conan
 First we need to install Conan. As it is Python-based the easiest way is to use pip for that:
 * `yes | pip install conan`{{execute}}
 
+Conan automatically detects which compiler we're using within this environment:
+* `conan profile new default --detect`{{execute}}
+
+Within this environemnt we're using GCC 5.4 (or higher). Therefore we need to explicitly tell Conan to build with C++11 in mind:
+* `conan profile update settings.compiler.libcxx=libstdc++11 default`{{execute}}
+
+# Building our sample app
 After the installation finished take a look at our second example:
 * The `main.cpp` did not change much. It now uses POCO though: `helloworld2/source/hello2.cpp`{{open}}
 * In the `CMakeLists.txt` you can already see that there's something new going on: Our app uses POCO, but it's nowhere to be found as a dependency. This is because Conan is handling this for us: `helloworld2/source/CMakeLists.txt`{{open}}
@@ -13,6 +21,6 @@ We can build the whole project with the following commands:
 * `conan install ../source`{{execute}}
 * `cmake ../source`{{execute}}
 * `cmake --build .`{{execute}}
-* `./hello2`{{execute}}
+* `./bin/hello2`{{execute}}
 
 Do you remember what it usually takes to pull in a dependency like POCO into your project? Note that Conan also handles indirect dependencies, you don't need to worry about OpenSSL or zlib for example (POCO depends on both of them). Feel free to play around with the `conanfile.txt`, change the version or add a completely different dependency from [conan-center](https://bintray.com/conan/conan-center).
