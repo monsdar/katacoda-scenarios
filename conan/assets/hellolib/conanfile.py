@@ -13,7 +13,7 @@ class HelloConan(ConanFile):
     exports_sources="hello.h", "hello.cpp", "CMakeLists.txt"
     
     def requirements(self):
-        self.requires("Poco/1.9.0@pocoproject/stable"
+        self.requires("Poco/1.9.0@pocoproject/stable")
     
     def build(self):
         cmake = CMake(self)
