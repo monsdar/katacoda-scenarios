@@ -9,10 +9,10 @@ After the installation finished take a look at our second example:
 * And here's where everything comes together: The `conanfile.txt` defines which dependencies to use: `helloworld2/source/conanfile.txt`{{open}}
 
 We can build the whole project with the following commands:
-* `cd ~/helloworld2/`{{execute}}
-* `conan install source`{{execute}}
-* `cmake source`{{execute}}
+* `mkdir -p ~/helloworld2/build && cd ~/helloworld2/build`{{execute}}
+* `conan install ../source`{{execute}}
+* `cmake ../source`{{execute}}
 * `cmake --build .`{{execute}}
 * `./hello2`{{execute}}
 
-Do you remember what it usually takes to pull in a dependency like POCO into your project? Note that Conan also handles indirect dependencies, you don't need to worry about OpenSSL or zlib for example (POCO depends on it them). Feel free to play around with the `conanfile.txt`, change the version or add a completely different dependency from [conan-center](https://bintray.com/conan/conan-center).
+Do you remember what it usually takes to pull in a dependency like POCO into your project? Note that Conan also handles indirect dependencies, you don't need to worry about OpenSSL or zlib for example (POCO depends on both of them). Feel free to play around with the `conanfile.txt`, change the version or add a completely different dependency from [conan-center](https://bintray.com/conan/conan-center).

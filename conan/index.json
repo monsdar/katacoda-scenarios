@@ -12,6 +12,10 @@
       {
         "title": "Consuming Packages",
         "text": "step2_consumePackages.md"
+      },
+      {
+        "title": "Package a library",
+        "text": "step3_createlib.md"
       }
     ],
     "intro": {
@@ -31,6 +35,10 @@
         {"file": "helloworld2/hello2.cpp", "target": "helloworld2/source/"},
         {"file": "helloworld2/CMakeLists.txt", "target": "helloworld2/source/"},
         {"file": "helloworld2/conanfile.txt", "target": "helloworld2/source/"},
+        {"file": "hellolib/hello.cpp", "target": "hellolib/source/"},
+        {"file": "hellolib/hello.h", "target": "hellolib/source/"},
+        {"file": "hellolib/CMakeLists.txt", "target": "hellolib/source/"},
+        {"file": "hellolib/conanfile.py", "target": "hellolib/source/"},
         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
