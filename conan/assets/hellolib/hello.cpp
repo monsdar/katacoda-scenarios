@@ -1,5 +1,7 @@
-#include "Poco/MD5Engine.h"
-#include "Poco/DigestStream.h"
+#include <Poco/MD5Engine.h>
+#include <Poco/DigestStream.h>
+
+#include "hello.h"
 
 std::string HelloGenerator::getHello()
 {

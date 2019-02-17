@@ -30,6 +30,7 @@
     },
     "assets": {
       "host01": [
+        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
         {"file": "helloworld/hello.cpp", "target": "helloworld/source/"},
         {"file": "helloworld/CMakeLists.txt", "target": "helloworld/source/"},
         {"file": "helloworld2/hello2.cpp", "target": "helloworld2/source/"},
@@ -38,8 +39,7 @@
         {"file": "hellolib/hello.cpp", "target": "hellolib/source/"},
         {"file": "hellolib/hello.h", "target": "hellolib/source/"},
         {"file": "hellolib/CMakeLists.txt", "target": "hellolib/source/"},
-        {"file": "hellolib/conanfile.py", "target": "hellolib/source/"},
-        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+        {"file": "hellolib/conanfile.py", "target": "hellolib/source/"}
       ]
     }
   },

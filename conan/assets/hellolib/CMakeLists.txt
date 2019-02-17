@@ -7,6 +7,6 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
 #Building the actual application
-target_include_libraries(hellolib PRIVATE ${CMAKE_SOURCE_DIR}/hello.h ${CONAN_INCLUDE_DIRS})
 add_library(hellolib hello.cpp)
+target_include_directories(hellolib PRIVATE ${CMAKE_SOURCE_DIR} ${CONAN_INCLUDE_DIRS})
 target_link_libraries(hellolib ${CONAN_LIBS})
