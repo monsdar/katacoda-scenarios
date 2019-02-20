@@ -26,3 +26,5 @@ Building the lib is straight-forward. Note how we can use conan to build:
 Here's the kicker: With `conan create` we can package our lib and push it into our local Conan cache:
 * `conan create ../source katacoda/testing`{{execute}}
 Our library is now available for consumers by including the package `hellolib/1.0.0@katacoda/testing`.
+
+As of now, the library is only available on our local machine. By creating an account on [conan-center](https://bintray.com/conan/conan-center) and using `conan upload ...` you could even upload that library to the official Conan server. This is not part of this tutorial though.
