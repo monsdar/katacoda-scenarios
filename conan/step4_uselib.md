@@ -1,4 +1,4 @@
-No let's use our newly generated library.
+Now let's use our newly generated library.
 
 Take a look onto helloworld3. It is similar to the previous versions, but now uses our lib:
 * Here's our implementation: `helloworld3/source/hello3.cpp`{{open}}
@@ -12,5 +12,6 @@ Let's build and test:
 * `conan install ../source`{{execute}}
 * `cmake ../source`{{execute}}
 * `cmake --build .`{{execute}}
+* `./bin/hello3`{{execute}}
 
 As you can see our own lib is consumed now.
