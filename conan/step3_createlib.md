@@ -17,6 +17,7 @@ Let's have a look how our lib looks like:
   * Note the attributes and how they define what our library looks like: Name, Description, Author, ...
   * There's a `build()` method that uses CMake to build the library
   * With `package()` we define where our libs are. This is necessary for consumers of our library.
+* Ignore the layout file for now. It'll come in handy later on.
 
 Building the lib is straight-forward. Note how we can use conan to build:
 * `mkdir -p ~/hellolib/build && cd ~/hellolib/build`{{execute}}

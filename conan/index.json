@@ -20,6 +20,10 @@
       {
         "title": "Use our library",
         "text": "step4_uselib.md"
+      },
+      {
+        "title": "Local workflow",
+        "text": "step5_localworkflow.md"
       }
     ],
     "intro": {
@@ -44,6 +48,7 @@
         {"file": "hellolib/hello.h", "target": "hellolib/source/"},
         {"file": "hellolib/CMakeLists.txt", "target": "hellolib/source/"},
         {"file": "hellolib/conanfile.py", "target": "hellolib/source/"},
+        {"file": "hellolib/customlayout", "target": "hellolib/source/"},
         {"file": "helloworld3/hello3.cpp", "target": "helloworld3/source/"},
         {"file": "helloworld3/CMakeLists.txt", "target": "helloworld3/source/"},
         {"file": "helloworld3/conanfile.txt", "target": "helloworld3/source/"}
