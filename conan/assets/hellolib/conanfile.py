@@ -11,6 +11,9 @@ class HelloConan(ConanFile):
     default_options = {"shared": False}
     generators = "cmake"
     exports_sources="hello.h", "hello.cpp", "CMakeLists.txt"
+
+    options = {"text": "ANY"}
+    default_options = {"text": "blablabla"}
     
     def requirements(self):
         self.requires("Poco/1.9.0@pocoproject/stable")
@@ -30,3 +33,7 @@ class HelloConan(ConanFile):
 
     def package_info(self):
         self.cpp_info.libs = ["hellolib"]
+
+    def deploy(self):
+        f = open("d:/Github/katacoda/katacoda-scenarios/conan/assets/demofile.txt", "a")
+        f.write(str(self.options.text))

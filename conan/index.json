@@ -6,8 +6,16 @@
   "details": {
     "steps": [
       {
-        "title": "Hello World",
+        "title": "Hello Conan",
         "text": "step1_helloWorld.md"
+      },
+      {
+        "title": "Hello Conan",
+        "text": "step1.1_whatsconan.md"
+      },
+      {
+        "title": "Hello Conan",
+        "text": "step1.2_installConan.md"
       },
       {
         "title": "Consuming Packages",
